@@ -1,10 +1,31 @@
 import "./styles.css";
 
-export default function App() {
+import Header from "./components/Header";
+import Homepage from "./pages/Homepage";
+import { BrowserRouter, Route } from "react-router-dom";
+import Modelpage from "./pages/Modelpage";
+
+import { makeStyles } from "@material-ui/core";
+
+function App() {
+  const useStyles = makeStyles({
+    App: {
+      backgroundColor: "#14161a",
+      color: "white",
+      minHeight: "100vh"
+    }
+  });
+
+  const classes = useStyles();
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
+    <BrowserRouter>
+      <div className={classes.App}>
+        <Header />
+        <Route path="/" component={Homepage} exact />
+        <Route path="/models/:id" component={Modelpage} />
+      </div>
+    </BrowserRouter>
   );
 }
+
+export default App;

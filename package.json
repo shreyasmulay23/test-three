@@ -1,19 +1,21 @@
 {
-  "name": "react",
+  "name": "three-demo",
   "version": "1.0.0",
-  "description": "React example starter project",
-  "keywords": [
-    "react",
-    "starter"
-  ],
+  "description": "",
+  "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "@react-three/drei": "9.7.1",
-    "@react-three/fiber": "8.0.14",
-    "react": "18.0.0",
-    "react-dom": "18.0.0",
-    "react-scripts": "4.0.0",
-    "three.js": "0.77.1"
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/lab": "^4.0.0-alpha.61",
+    "axios": "^0.27.2",
+    "bootstrap": "^5.1.3",
+    "firebase": "^9.7.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-google-button": "^0.7.2",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^5.3.1",
+    "react-scripts": "4.0.0"
   },
   "devDependencies": {
     "@babel/runtime": "7.13.8",
